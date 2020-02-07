@@ -29,3 +29,15 @@ function favPlayer() {
     }
     document.getElementById("my-player").innerHTML = playerOutput;
 }
+
+function hello() {
+    var x = "Hello everybody";
+    document.getElementsByClassName("hello")[0].innerHTML = x;
+}
+
+
+var canvas = document.getElementById("can");
+var ctx = canvas.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200, 100);
+ctx.stroke();
