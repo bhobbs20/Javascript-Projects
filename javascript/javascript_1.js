@@ -42,9 +42,19 @@ function hello() {
 // ctx.lineTo(200, 100);
 // ctx.stroke();
 
+// window.onload = function {
+//   var canvas = document.getElementById("can");
+//   var ctx = canvas.getContext("2d");
+//   var img = document.getElementById("morty");
+//   ctx.drawImage(img, 10, 10);
+// };
+
 window.onload = function() {
-  var canvas = document.getElementById("can");
-  var ctx = canvas.getContext("2d");
-  var img = document.getElementById("morty");
-  ctx.drawImage(img, 10, 10);
-};
+    var c = document.getElementById("Can-2");
+    var ctx = c.getContext("2d");
+    var grd = ctx.createLinearGradient(0, 0, 170, 0);
+    grd.addColorStop(0, "black");
+    grd.addColorStop(1, "white");
+    ctx.fillStyle = grd;
+    ctx.fillRect(20, 20, 150, 100);
+}
