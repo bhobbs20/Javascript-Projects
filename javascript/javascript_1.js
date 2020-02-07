@@ -36,8 +36,15 @@ function hello() {
 }
 
 
-var canvas = document.getElementById("can");
-var ctx = canvas.getContext("2d");
-ctx.moveTo(0,0);
-ctx.lineTo(200, 100);
-ctx.stroke();
+// var canvas = document.getElementById("can");
+// var ctx = canvas.getContext("2d");
+// ctx.moveTo(0,0);
+// ctx.lineTo(200, 100);
+// ctx.stroke();
+
+window.onload = function() {
+  var canvas = document.getElementById("can");
+  var ctx = canvas.getContext("2d");
+  var img = document.getElementById("morty");
+  ctx.drawImage(img, 10, 10);
+};
