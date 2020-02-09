@@ -1,0 +1,86 @@
+.form-container {
+    margin-top: auto auto;
+    height: 100%;
+
+}
+
+form {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    /* margin: auto auto; */
+    margin-top: 75px;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left:auto;
+    padding: 5px;
+    background-color: lightseagreen;
+    border: none;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: .16rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+   
+    font-size: 14px;
+    font-weight: 350;
+    letter-spacing: .10rem;
+    border: 1px solid #fff;
+    width: 95%;
+    border-radius: 8px;
+    padding: 5px 5px;
+    border-color:#fff;
+    margin: 5px 5px 0 5px;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    background-color: #80e6e1;
+    font-weight: 350;
+    letter-spacing: .10rem;
+
+}
+
+input[type="submit"] {
+    width: 300px;
+  
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  
+    align-self: center;
+}
+
+.btn {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    color: purple;
+    width: 280px;
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #1eded4;
+    color: #fff;
+    border: 1px solid #1eded4;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15); 
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: lightseagreen;
+    border: 1px solid #fff;
+}
