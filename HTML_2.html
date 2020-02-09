@@ -11,17 +11,28 @@
     <!-- Body -->
     <body> 
 
-    <div class="form-container">
-        <form>
-        
-   
-    <h2>Contact</h2><br>
-    <input type="text" name="fullname" value="" placeholder="Enter Name"><br>
-    <input type="email" name="email" value="" placeholder="Enter Email"><br>
-    <textarea name="message" rows="10" cols="30"  value="" placeholder="Enter Message"></textarea>
-    <button type="submit" value="" class="btn">Message</button>
+   <!-- <div class="form-container">
+            <form>
+                <h2>Contact</h2><br>
+                <input type="text" name="ffullname" value="" placeholder="Enter Name" required><br>
+                <input type="email" name="femail" value="" placeholder="Enter Email" required><br>
+                <textarea name="fmessage" rows="10" cols="30"  value="" placeholder="Enter Message" required></textarea>
+                <button type="submit" value="" class="btn">Message</button>
+            </form>
+        </div>  --->
 
-</form>
- </div>
+
+ <!-- form with js-->
+        <div class="form-container">
+            <form id="contact" onsubmit="return validateForm()">
+                <h2>Contact</h2><br>
+                 <input type="text" name="fullname" value="" placeholder="Enter Name" ><br>
+                <input type="email" name="email" value="" placeholder="Enter Email" ><br>
+                <textarea name="message" rows="10" cols="30"  value="" placeholder="Enter Message" ></textarea>
+                <button type="submit" value="" class="btn">Message</button>
+
+            </form>
+        </div>
+
 	</body>
 </html>
