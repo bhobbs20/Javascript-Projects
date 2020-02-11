@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<!-- Head -->
+	<head>
+		<meta charset="UTF-8">
+		<title>Dom_OBJ_DOC</title>
+	</head>
+
+    <!-- Body -->
+    <body onload="getTitle()"> 
+        <h5>Head Title:</h5>
+        <p id="title"> </p>
+
+    <script type="text/javascript">
+        function getTitle() {
+            var myTitle = document.title;
+            document.getElementById('title').innerHTML = myTitle;
+        }
+    </script>
+	</body>
+</html>
