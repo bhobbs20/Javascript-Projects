@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<!-- Head -->
+	<head>
+		<meta charset="UTF-8">
+		<title>XML</title>
+	</head>
+
+    <!-- Body -->
+    <body> 
+
+    <p id="xml_ex"></p>
+    <p id="xml_exx"></p>
+    <p id="xml_exxx"></p>
+   
+    <script>
+        var XML_Parser, XML_Document;
+
+        var Player = "<player>" +
+            "<name> Patrice Bergeron </name> " +
+            "<position> Center </position>" +
+            "<shot> Right </shot>" +
+            "<goals> 20 </goals>" +
+            "</player>";
+
+        // creates an xml dom parser
+        XML_Parser = new DOMParser();
+
+        // creates a mew xml dom object using the text string
+        XML_Document = XML_Parser.parseFromString(Player, "text/xml");
+
+        document.getElementById("xml_ex").innerHTML = XML_Document.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+        document.getElementById("xml_exx").innerHTML = XML_Document.getElementsByTagName("goals")[0].childNodes[0].nodeValue;
+        document.getElementById("xml_exxx").innerHTML = XML_Document.getElementsByTagName("position")[0].childNodes[0].nodeValue;
+        
+    </script>
+   
+	</body>
+</html>
